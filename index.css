@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 900px;
+  width: 95%;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 380px;
+
+}
+
+.info {
+  background: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  justify-content: space-between;
+  padding: 25px;
+  width: 90%;
+  
+}
+.pic{
+  width: 100%;
+  background-image: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 1.5px;
+  padding: 15px 0;
+}
+.ins {
+  color: #aa5cdb;
+}
+.snip p {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+
+}
+.imp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imp p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.imp span {
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+}
+.pic img{
+  display: none;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #aa5cdb90;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 700px;
+  }
+
+  .pic {
+    height: 50%;
+    background-image: url(images/image-header-mobile.jpg);
+  }
+
+  .info {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .snip p{
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  h2:last-of-type{
+    text-align: center;
+  }
+  .imp{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .imp p{
+padding: 5px;
+  }
+  .imp span{
+    margin-left: 3px;
+  }
+}
